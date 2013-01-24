@@ -1,0 +1,15 @@
+<% @comments.each do |comment| %>
+	<ul>
+		<li>
+			Autor: <%= comment.author %>
+		</li>
+		<li>
+			Text: <%= comment.text %>
+		</li>
+		<li>
+			Created at: <%= comment.created_at %>
+		</li>
+	</ul>
+	<hr/>
+<% end %>
+<%= link_to 'Create new messsage', :action=>'new' %>

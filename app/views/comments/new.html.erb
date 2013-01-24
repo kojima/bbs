@@ -1,0 +1,11 @@
+<%= form_for @new_comment do |f| %>
+	<p>
+		<%= f.label :autor %>
+		<%= f.text_field :author %>
+	</p>
+	<p>
+		<%= f.label :text %>
+		<%= f.text_area :text %>
+	</p>
+	<%= f.submit "Create" %>
+<% end %>
